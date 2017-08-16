@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+# Posts
+
+{% for post in site.posts limit:5 %}
+{{ post.title }} 
+{% endfor %}
+
 
 {% for post in site.posts %}
     <a href="{{ post.url }}">
