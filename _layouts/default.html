@@ -13,14 +13,15 @@
   <body>
     <div class="wrapper">
       <header>
-          <img src="../assets/images/fabriCELL_logo.svg">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <a  href="{{site.url}}"><img src="/assets/images/fabriCELL_logo.svg">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1></a>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/test.html">Blog</a></li>
+    <li><a href="join.html">Join Us</a></li>
+    <li><a href="/steeringgroup.html">Steering Group</a></li>
+    <li><a href="/meetings.html">Meetings</a></li>
   </ul>
 </nav>
 
@@ -41,13 +42,14 @@
         {% endif %}
       </header>
       <section>
+<h1>{{page.title}}</h1>
 
       {{ content }}
 
       </section>
       <footer>
         {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <p><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>

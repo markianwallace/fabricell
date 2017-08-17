@@ -4,6 +4,22 @@
 @import "{{ site.theme }}";
 
 a:hover, a:focus {
-  color:#069;
-  font-weight: normal;
+  //color:#069;
+  //font-weight: normal;
+}
+
+.container {
+    position: relative;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
 }
