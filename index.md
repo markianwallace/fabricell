@@ -3,6 +3,10 @@ layout: default
 ---
 # Posts
 
+Here is a test.
+
+
+
 {% for post in site.posts limit:5 %}
 {{ post.title }} 
 {% endfor %}
