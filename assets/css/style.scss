@@ -3,12 +3,36 @@
 
 @import "{{ site.theme }}";
 
-a:hover, a:focus {
-  //color:#069;
-  //font-weight: normal;
+/*a:hover, a:focus {
+  color:#069;
+  font-weight: normal;
+}*/
+
+a:hover, a:focus { color: #069; font-weight: normal; }
+
+
+header a:hover {font-weight:normal;}
+
+header h1 {font-size:45pt;}
+
+header p {}
+
+footer {  bottom: 10px;}
+
+footer p {margin: 0 0 0px;}
+
+h1 a{
+  color:black;  
 }
 
-/*.container {
+h1 a:hover {
+    
+    font-weight: bold;
+}
+
+h1 em{opacity:0.3; font-size:35pt;}
+
+.container {
     position: relative;
 }
 
@@ -18,8 +42,8 @@ a:hover, a:focus {
     right: 16px;
 }
 
-img {
-    width: 100%;
-    height: auto;
+header img {
+    width: 80%;
+    /*height: auto;*/
     opacity: 0.3;
-}*/
+}
